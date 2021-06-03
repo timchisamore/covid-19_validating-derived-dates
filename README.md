@@ -1,6 +1,6 @@
-# Comparing Episode Dates
+# COVID-19 Validating Derived Dates
 
-This R projects uses CCM data to quantify the extend of incorrectly derived
+This R project uses CCM data to quantify the extend of incorrectly derived
 system fields. Specifically, we enumerate how many cases of COVID-19 have
 incorrect earliest symptom onset date, earliest positive lab collection date,
 earliest lab collection date, episode date, and episode date type. We have
