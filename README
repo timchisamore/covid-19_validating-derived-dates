@@ -1,4 +1,4 @@
-# COVID-19 Validating Derived Dates
+COVID-19 Validating Derived Dates
 
 This R project uses CCM data to quantify the extend of incorrectly derived
 system fields. Specifically, we enumerate how many cases of COVID-19 have
@@ -10,10 +10,6 @@ with an incorrect earliest symptom onset date, earliest positive lab collection
 date, earliest lab collection date, episode date, or episode date type is
 returned.
 
-## iPHIS Episode Date Logic
+iPHIS Episode Date Logic: Earliest Symptom Onset Date > Earliest Positive Lab Collection Date > Reported Date
 
-Earliest Symptom Onset Date > Earliest Positive Lab Collection Date > Reported Date
-
-## CCM Episode Date Logic
-
-min(Earliest Symptom Onset Date, Earliest Positive Lab Collection Date, Reported Date)
+CCM Episode Date Logic: min(Earliest Symptom Onset Date, Earliest Positive Lab Collection Date, Reported Date)
