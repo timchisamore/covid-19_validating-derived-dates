@@ -13,7 +13,7 @@
 #' @param reported_date_system A dttm representing the reported date of the
 #' case.
 #'
-#' @return A dttm represneting the iPHIS episode date of the case.
+#' @return A dttm representing the iPHIS episode date of the case.
 #' @export
 #'
 #' @examples
@@ -27,5 +27,4 @@ deriving_iphis_episode_date <-
       !is.na(earliest_positive_lab_collection_date_derived) ~ earliest_positive_lab_collection_date_derived,
       TRUE ~ reported_date_system
     )
-    
   }

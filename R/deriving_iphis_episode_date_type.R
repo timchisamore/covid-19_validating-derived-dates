@@ -27,5 +27,4 @@ deriving_iphis_episode_date_type <-
       !is.na(earliest_positive_lab_collection_date_derived) ~ "Lab Specimen Collection",
       TRUE ~ "Investigation Reported"
     )
-    
   }

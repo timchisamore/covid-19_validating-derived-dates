@@ -27,5 +27,4 @@ deriving_ccm_episode_date <-
         reported_date_system
       )
     ), na.rm = TRUE)
-    
   }

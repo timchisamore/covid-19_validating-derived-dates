@@ -27,5 +27,4 @@ deriving_ccm_episode_date_type <-
       earliest_positive_lab_collection_date_derived == episode_date_derived ~ "Lab Specimen Collection",
       TRUE ~ "Investigation Reported"
     )
-    
   }
