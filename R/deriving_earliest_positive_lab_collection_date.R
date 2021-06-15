@@ -17,7 +17,7 @@ deriving_earliest_positive_lab_collection_date <- function(clean_ccm_case_lab_re
     # labs with an interpretation value of positive or an observation code of
     # detected, reactive, or isolated are consider positive
     filter(
-      interpretation_value == "Positive" |
+      str_to_title(interpretation_value) == "Positive" |
         str_to_title(observation_code) %in% c("Detected", "Reactive", "Isolated")
     ) %>%
     group_by(investigation_number) %>%
