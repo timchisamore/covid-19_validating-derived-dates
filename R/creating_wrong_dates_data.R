@@ -133,11 +133,5 @@ creating_wrong_dates_data <-
         delta_episode_date_days
       ) %>%
       # we only want records where at least one of the fields is wrong
-      filter(
-        is_earliest_symptom_onset_date_wrong |
-          is_earliest_positive_lab_collection_date_wrong |
-          is_earliest_lab_collection_date_wrong |
-          is_episode_date_type_wrong |
-          is_episode_date_wrong
-      )
+      filter(if_any(.cols = c(is_earliest_symptom_onset_date_wrong, is_earliest_positive_lab_collection_date_wrong, is_earliest_lab_collection_date_wrong, is_episode_date_type_wrong, is_episode_date_wrong)))
   }
