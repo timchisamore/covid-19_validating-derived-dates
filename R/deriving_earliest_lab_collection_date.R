@@ -14,5 +14,5 @@
 deriving_earliest_lab_collection_date <- function(clean_ccm_case_lab_results_data) {
   clean_ccm_case_lab_results_data %>%
     group_by(investigation_number) %>%
-    summarise(earliest_lab_collection_date = min(collection_date, na.rm = TRUE))
+    summarise(earliest_lab_collection_date = min(collection_date, na.rm = TRUE), .groups = "drop")
 }

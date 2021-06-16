@@ -21,5 +21,5 @@ deriving_earliest_positive_lab_collection_date <- function(clean_ccm_case_lab_re
         str_to_title(observation_code) %in% c("Detected", "Reactive", "Isolated")
     ) %>%
     group_by(investigation_number) %>%
-    summarise(earliest_positive_lab_collection_date = min(collection_date, na.rm = TRUE))
+    summarise(earliest_positive_lab_collection_date = min(collection_date, na.rm = TRUE), .groups = "drop")
 }
