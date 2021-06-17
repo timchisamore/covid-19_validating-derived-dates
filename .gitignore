@@ -2,7 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-_targets/
-archive/
-data/
-documents/
+_targets
+archive
+data
+documents
